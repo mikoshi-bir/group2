@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,7 +43,7 @@
       </div>
     </header>
     <main>
-      <div>
+      <div class="main-header-contact">
         <div class="contacts">
           <div class="contacts-text">Follow us</div>
           <div>
@@ -61,10 +61,8 @@
             <img src="assets/Rectangle.png" alt="" />
             <div>Explore the nature beauty</div>
           </div>
-          <div>
-            <div class="main-text2">Discover</div>
-            <div class="main-text3">Wonderful Indonesia</div>
-          </div>
+          <div class="main-text2">Discover</div>
+          <div class="main-text3">Wonderful Indonesia</div>
         </div>
       </div>
       <div class="scroll">
@@ -121,7 +119,17 @@
         </section>
         <section class="article-section2">
           <div class="article-section2-image">
-            <img src="assets/image 2.jpg" alt="" />
+            <picture>
+              <source
+                media="(max-width: 1024px)"
+                srcset="assets/image2-small.jpg"
+              />
+              <source
+                media="(max-width: 768px)"
+                srcset="assets/image2-smaller.jpg"
+              />
+              <img src="assets/image 2.jpg" alt="" />
+            </picture>
           </div>
           <div class="article-section2-text">
             <div class="hug"><img src="assets/hug.png" alt="" /></div>
@@ -203,7 +211,7 @@
           <div><button class="footer-button1">Get started</button></div>
         </div>
       </div>
-      <div>
+      <div class="divider">
         <img src="assets/Divider.png" alt="" />
       </div>
       <div class="footer-main">
